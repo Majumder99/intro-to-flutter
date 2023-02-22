@@ -1,31 +1,15 @@
-import "package:flutter/material.dart";
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import
 
-void main() {
-  runApp(
-    MaterialApp(
-      title: "My flutter app",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Dashboard".toUpperCase()),
-          backgroundColor: Colors.blue,
-        ),
-        body: Center(
-          child: Text.rich(
-            TextSpan(
-              text: "Sourav",
-              children: [
-                TextSpan(
-                    text: "Majumder",
-                    style: TextStyle(fontSize: 30.0, color: Colors.red)),
-                TextSpan(
-                    text: "Good",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.black))
-              ],
-            ),
-          ),
-        ),
-      ),
-    ),
-  );
+import "package:flutter/material.dart";
+import "screens/Dashboard.dart";
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(title: "My first flutter app", home: Dashboard());
+  }
 }
