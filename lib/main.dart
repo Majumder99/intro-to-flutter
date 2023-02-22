@@ -10,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "My first flutter app", home: Dashboard());
+    return MaterialApp(
+        title: "My first flutter app",
+        themeMode: ThemeMode.system,
+        debugShowCheckedModeBanner: false,
+        home: Dashboard());
   }
 }

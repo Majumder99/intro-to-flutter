@@ -4,6 +4,7 @@
 import "dart:math";
 
 import "package:flutter/material.dart";
+import "package:font_awesome_flutter/font_awesome_flutter.dart";
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -13,9 +14,37 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Dashboard".toUpperCase()),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color.fromRGBO(33, 150, 243, 1),
       ),
-      body: Center(child: Text("Random number is : ${giveRandomNumber()}")),
+
+      backgroundColor: Colors.cyan,
+      // body: Center(child: Text("Random number is : ${giveRandomNumber()}")),
+      // body: Image(
+      //   image: AssetImage("images/car.jpg"),
+      //   width: 200,
+      //   height: 200,
+      // ),
+      // body: Image.asset("images/car.jpg")
+      // body: Center(
+      //   child: IconButton(
+      //     icon: Icon(
+      //       Icons.access_alarm_outlined,
+      //     ),
+      //     onPressed: () {},
+      //     iconSize: 50,
+      //     splashColor: Colors.red,
+      //     highlightColor: Colors.white,
+      //   ),
+      // ),
+      body: Center(
+        child: IconButton(
+          icon: Icon(FontAwesomeIcons.baby),
+          onPressed: () {},
+          iconSize: 50,
+          splashColor: Colors.red,
+          highlightColor: Colors.white,
+        ),
+      ),
     );
   }
 }
