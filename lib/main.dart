@@ -2,6 +2,8 @@
 
 import "package:flutter/material.dart";
 import "screens/Dashboard.dart";
+import "screens/MainContent.dart";
+import "screens/MainButton.dart";
 
 void main() => runApp(MyApp());
 
@@ -14,6 +16,6 @@ class MyApp extends StatelessWidget {
         title: "My first flutter app",
         themeMode: ThemeMode.system,
         debugShowCheckedModeBanner: false,
-        home: Dashboard());
+        home: MainButton());
   }
 }
