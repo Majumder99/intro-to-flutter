@@ -5,6 +5,7 @@ import "screens/Dashboard.dart";
 import "screens/MainContent.dart";
 import "screens/MainButton.dart";
 import "screens/Home.dart";
+import "screens/RowColumn.dart";
 
 void main() => runApp(MyApp());
 
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
         title: "My first flutter app",
         themeMode: ThemeMode.system,
         debugShowCheckedModeBanner: false,
-        home: Home());
+        home: RowColumn());
   }
 }
